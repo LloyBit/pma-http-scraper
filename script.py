@@ -30,8 +30,8 @@ def is_target_td(tag):
 
 
 
-# Функция для регистрации в pma
-def auth():
+# Функция для регистрации в pma 
+def main():
     with requests.Session() as session:
         # Вытаскиваем страницу логина
         auth_response = session.get(auth_url)
@@ -87,4 +87,4 @@ def auth():
         
 
 if __name__ == "__main__":
-    auth()
+    main()
